@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.landscapeside.androidtagview'
 
 android {
     compileSdkVersion 28
@@ -22,4 +25,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'androidx.appcompat:appcompat:1.0.1'
 }
-apply from: 'https://raw.githubusercontent.com/whilu/AndroidPublishLibrary/master/project/library/bintray_publish.gradle'
+//apply from: 'https://raw.githubusercontent.com/whilu/AndroidPublishLibrary/master/project/library/bintray_publish.gradle'

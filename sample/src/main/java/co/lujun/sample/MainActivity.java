@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTagCrossClick(int position) {
+                mTagContainerLayout3.removeTag(position);
             }
         });
 

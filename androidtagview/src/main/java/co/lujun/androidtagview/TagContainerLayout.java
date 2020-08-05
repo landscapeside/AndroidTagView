@@ -266,6 +266,8 @@ public class TagContainerLayout extends ViewGroup {
      */
     private int mCrossColor = Color.BLACK;
 
+    private int mCrossBgColor = Color.TRANSPARENT;
+
     /**
      * The cross line width(default 1dp)
      */
@@ -341,6 +343,7 @@ public class TagContainerLayout extends ViewGroup {
         mCrossAreaPadding = attributes.getDimension(R.styleable.AndroidTagView_tag_cross_area_padding,
                 dp2px(context, mCrossAreaPadding));
         mCrossColor = attributes.getColor(R.styleable.AndroidTagView_tag_cross_color, mCrossColor);
+        mCrossBgColor = attributes.getColor(R.styleable.AndroidTagView_tag_cross_bg_color, mCrossBgColor);
         mCrossLineWidth = attributes.getDimension(R.styleable.AndroidTagView_tag_cross_line_width,
                 dp2px(context, mCrossLineWidth));
         mTagSupportLettersRTL = attributes.getBoolean(R.styleable.AndroidTagView_tag_support_letters_rlt,
@@ -597,6 +600,7 @@ public class TagContainerLayout extends ViewGroup {
         tagView.setCrossAreaWidth(mCrossAreaWidth);
         tagView.setCrossAreaPadding(mCrossAreaPadding);
         tagView.setCrossColor(mCrossColor);
+        tagView.setCrossBgColor(mCrossBgColor);
         tagView.setCrossLineWidth(mCrossLineWidth);
         tagView.setTagSupportLettersRTL(mTagSupportLettersRTL);
         tagView.setBackgroundResource(mTagBackgroundResource);
